@@ -1,12 +1,12 @@
-# crypten_cifar10_cuda_distributed
+# CrypTen Cifar10 Distributed Demo with CUDA
 
 This project shows how to run CrypTen Cifar10 demo on distributed servers with CUDA enanbled.
 
 ## Environment preparation
 
 + Install CUDA environment, pytorch, and make sure they are working normally.
-+ Install crypten using source (recommended).
-+ Glone this project.
++ Install [CrypTen](https://github.com/facebookresearch/CrypTen) using source (recommended).
++ Glone this project, and change into the project directory.
 
 ## Data preparation
 
@@ -81,7 +81,7 @@ python launch_distributed.py  --evaluate \
     --rank 1 \
     --master_address 192.168.0.1 \
     --master_port 12345 \
-     --gpu_id 0 \
+    --gpu_id 0 \
     --model-location model/model_best.pth.tar \
     --resume  \
     --batch-size 50 \
